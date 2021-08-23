@@ -1,0 +1,85 @@
+.content{
+    display: flex;
+    background-color: aquamarine;
+    width: 80%;
+    height: 400px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.content>div{
+    border: 1px dashed black;
+    width: 100px;
+    height: 200px;
+}
+p{position:relative;
+    top:70px;
+text-align: center;}
+
+.box1{background-color: blue;
+        order:6}
+
+.wrapper{display: grid;
+width: 80%;
+background-color: honeydew;
+grid-template-columns: 100px 100px;
+grid-template-rows: 100px 100px 100px;
+justify-content: center;
+padding: 50px;
+grid-template-areas:
+"F B"
+"C D"
+"E A";
+}
+
+.wrapper>div{
+    
+    border: 1px solid black;
+}
+h1{color: black;
+text-shadow: 2px 2px fuchsia;}
+
+.caja1{
+    background-color: red;
+    grid-area: A;
+}
+
+.caja2{
+    background-color: rosybrown;
+    grid-area: B;
+}
+
+.caja3{
+    background-color: yellow;
+    grid-area: C;
+}
+
+.caja4{
+    background-color: bisque;
+    grid-area: D;
+}
+
+.caja5{
+    background-color: brown;
+    grid-area: E;
+}
+
+.caja6{
+    background-color: hotpink;
+    grid-area: F;
+}
+@media screen and (max-width:1280px){
+
+    body{background-color: indigo;}
+}
+
+@media screen and (max-width:680px){
+
+    body{background-color:green;}
+}
+
+@media screen and (max-width:480px){
+
+    body{background-color:yellow;}
+}
